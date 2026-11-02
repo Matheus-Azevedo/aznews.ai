@@ -1,1 +1,1 @@
-# az-news-ai
+# aznews.ai
