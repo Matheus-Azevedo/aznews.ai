@@ -24,6 +24,7 @@ export default function Home() {
             alt={imageAlt}
             width={1280}
             height={720}
+            sizes="(min-width: 960px) 920px, calc(100vw - 2.5rem)"
             priority
           />
           <figcaption className="figcaption">

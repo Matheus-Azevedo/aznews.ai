@@ -85,7 +85,7 @@ header {
 
 .figcaption {
   padding: 1rem 1.25rem 1.25rem;
-  font-family: var(--font-crimson), Georgia, serif;
+  font-family: var(--font-crimson-italic), Georgia, serif;
   font-size: 1.125rem;
   font-style: italic;
   color: var(--muted);
