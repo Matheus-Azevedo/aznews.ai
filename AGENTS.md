@@ -8,13 +8,13 @@ Escopo atual: **uma landing page** com imagem em `public/assets/ia-catequese-cat
 
 ## Stack (estado atual do repositório)
 
-| Camada | Escolha |
-|--------|---------|
-| Framework | Angular 21 (LTS) |
-| Linguagem | TypeScript |
-| Estilos | `src/styles.css` com variáveis `:root` e `prefers-color-scheme` |
-| Fontes | Google Fonts: Crimson Pro 600, Crimson Pro 400 itálico, Source Sans 3 400 |
-| Imagens | arquivo em `public/assets/`, servido como asset estático |
+| Camada    | Escolha                                                                   |
+| --------- | ------------------------------------------------------------------------- |
+| Framework | Angular 21 (LTS)                                                          |
+| Linguagem | TypeScript                                                                |
+| Estilos   | `src/styles.css` com variáveis `:root` e `prefers-color-scheme`           |
+| Fontes    | Google Fonts: Crimson Pro 600, Crimson Pro 400 itálico, Source Sans 3 400 |
+| Imagens   | arquivo em `public/assets/`, servido como asset estático                  |
 
 Versões: `package.json`.
 
@@ -42,6 +42,8 @@ Ignorados no git: `node_modules`, `dist`, `.angular/cache` (`.gitignore`).
 npm install
 npm start
 npm run build
+npm run lint
+npm run format
 ```
 
 Desenvolvimento local: `http://localhost:4200` (`README.md`). O build de produção gera `dist/aznews/browser`.

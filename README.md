@@ -22,3 +22,10 @@ npm run build
 ```
 
 Os arquivos estáticos ficam em `dist/aznews/browser`.
+
+## Lint e formatação
+
+```bash
+npm run lint
+npm run format
+```
