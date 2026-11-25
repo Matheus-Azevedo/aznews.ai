@@ -1,8 +1,8 @@
 # aznews.ai
 
-Projeto do **Curso Dev**: inteligência artificial em diálogo com a fé católica. Hoje o repositório entrega uma **landing page** em [Next.js](https://nextjs.org/) 16 (App Router), React 19 e JavaScript.
+Projeto do **Curso Dev**: inteligência artificial em diálogo com a fé católica. O repositório entrega uma **landing page** em [Angular](https://angular.dev/) 21 (LTS) e TypeScript.
 
-**Stack:** CSS em `app/globals.css`, fontes via `next/font` (Crimson Pro e Source Sans 3), imagens com `next/image` em `public/assets/`.
+**Stack:** CSS em `src/styles.css`, fontes Crimson Pro e Source Sans 3, imagem em `public/assets/`.
 
 Instruções para agentes e contexto do repo: [`AGENTS.md`](./AGENTS.md).
 
@@ -10,14 +10,15 @@ Instruções para agentes e contexto do repo: [`AGENTS.md`](./AGENTS.md).
 
 ```bash
 npm install
-npm run dev
+npm start
 ```
 
-Abra [http://localhost:3000](http://localhost:3000).
+Abra [http://localhost:4200](http://localhost:4200).
 
 ## Produção
 
 ```bash
 npm run build
-npm run start
 ```
+
+Os arquivos estáticos ficam em `dist/aznews/browser`.

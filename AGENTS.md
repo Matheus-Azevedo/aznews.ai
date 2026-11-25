@@ -2,7 +2,7 @@
 
 ## Sobre o projeto
 
-**aznews.ai** é um projeto do **Curso Dev**. Tema: inteligência artificial em diálogo com a fé católica; catequese como encontro, não como programação (ver copy em `app/page.js` e `metadata` em `app/layout.js`).
+**aznews.ai** é um projeto do **Curso Dev**. Tema: inteligência artificial em diálogo com a fé católica; catequese como encontro, não como programação (ver copy em `src/app/app.html` e metadados em `src/index.html`).
 
 Escopo atual: **uma landing page** com imagem em `public/assets/ia-catequese-catolica.jpg`.
 
@@ -10,35 +10,38 @@ Escopo atual: **uma landing page** com imagem em `public/assets/ia-catequese-cat
 
 | Camada | Escolha |
 |--------|---------|
-| Framework | Next.js 16 — App Router |
-| UI | React 19 |
-| Linguagem | JavaScript (`.js`) |
-| Estilos | `app/globals.css` com variáveis `:root` e `prefers-color-scheme` |
-| Fontes | `next/font/google`: Crimson Pro, Source Sans 3 |
-| Imagens | `next/image`, arquivos em `public/` |
+| Framework | Angular 21 (LTS) |
+| Linguagem | TypeScript |
+| Estilos | `src/styles.css` com variáveis `:root` e `prefers-color-scheme` |
+| Fontes | Google Fonts: Crimson Pro 600, Crimson Pro 400 itálico, Source Sans 3 400 |
+| Imagens | arquivo em `public/assets/`, servido como asset estático |
 
-Versões: `package.json`. Dev usa Turbopack (`next dev`, padrão do Next 16).
+Versões: `package.json`.
 
 ## Estrutura
 
 ```
-app/
-  layout.js
-  page.js
-  globals.css
+src/
+  index.html
+  styles.css
+  main.ts
+  app/
+    app.ts
+    app.html
+    app.css
+    app.config.ts
 public/
   assets/
 ```
 
-Ignorados no git: `node_modules`, `.next`, `out` (`.gitignore`).
+Ignorados no git: `node_modules`, `dist`, `.angular/cache` (`.gitignore`).
 
 ## Comandos
 
 ```bash
 npm install
-npm run dev
+npm start
 npm run build
-npm run start
 ```
 
-Desenvolvimento local: `http://localhost:3000` (`README.md`).
+Desenvolvimento local: `http://localhost:4200` (`README.md`). O build de produção gera `dist/aznews/browser`.
